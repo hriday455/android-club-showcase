@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1612"/>
+      <stop offset="100%" stop-color="#142921"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#bgGrad4)"/>
+
+  <!-- Field Sensor Mesh Illustration -->
+  <g transform="translate(60, 60)">
+    <!-- Soil sensor visualization -->
+    <path d="M 40 180 Q 140 120 240 160 T 420 110" fill="none" stroke="rgba(52, 211, 153, 0.25)" stroke-width="4"/>
+    <path d="M 40 210 Q 140 150 240 190 T 420 140" fill="none" stroke="rgba(52, 211, 153, 0.15)" stroke-width="3"/>
+
+    <!-- Sensor Nodes -->
+    <circle cx="140" cy="120" r="14" fill="#059669" stroke="#34D399" stroke-width="2"/>
+    <circle cx="240" cy="160" r="14" fill="#059669" stroke="#34D399" stroke-width="2"/>
+    <circle cx="360" cy="125" r="14" fill="#059669" stroke="#34D399" stroke-width="2"/>
+
+    <!-- Signal Pulses -->
+    <circle cx="240" cy="160" r="30" fill="none" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+
+    <!-- Central Telemetry Card -->
+    <g transform="translate(100, 20)">
+      <rect width="280" height="210" rx="14" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.5"/>
+      <text x="24" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#F8FAFC">AgroSense Mobile Node #04</text>
+      <text x="24" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Bluetooth Low Energy (BLE) • Live Sync</text>
+
+      <!-- Gauge 1: Soil Moisture -->
+      <g transform="translate(24, 75)">
+        <rect width="105" height="65" rx="8" fill="rgba(255,255,255,0.04)"/>
+        <text x="12" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Soil Moisture</text>
+        <text x="12" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#34D399">68%</text>
+        <text x="12" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#10B981">Optimal range</text>
+      </g>
+
+      <!-- Gauge 2: Ambient Temp -->
+      <g transform="translate(145, 75)">
+        <rect width="110" height="65" rx="8" fill="rgba(255,255,255,0.04)"/>
+        <text x="12" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Field Temp</text>
+        <text x="12" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#F59E0B">26.4°C</text>
+        <text x="12" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#FBBF24">Normal</text>
+      </g>
+
+      <!-- Notification pill -->
+      <rect x="24" y="156" width="232" height="36" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)"/>
+      <circle cx="42" cy="174" r="6" fill="#10B981"/>
+      <text x="56" y="178" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#E2E8F0">Irrigation valve auto-scheduled for 06:00</text>
+    </g>
+  </g>
+</svg>

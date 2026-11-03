@@ -1,0 +1,19 @@
+{
+  "name": "android-club-showcase",
+  "version": "1.0.0",
+  "description": "Official showcase website for Android Club — modern, responsive, and interactive.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -p 3000 .",
+    "dev": "npx serve -p 3000 ."
+  },
+  "keywords": [
+    "android",
+    "kotlin",
+    "jetpack-compose",
+    "portfolio",
+    "club-website"
+  ],
+  "author": "Android Club Developers",
+  "license": "MIT"
+}

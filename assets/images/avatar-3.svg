@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E1065"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="skin3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FED7AA"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="url(#avGrad3)" stroke="#EC4899" stroke-width="3"/>
+  <!-- Body/Shoulders -->
+  <path d="M 28 150 C 28 120, 50 108, 80 108 C 110 108, 132 120, 132 150 Z" fill="#4C1D95"/>
+  <!-- Head & Neck -->
+  <rect x="71" y="85" width="18" height="24" rx="5" fill="#FB923C"/>
+  <circle cx="80" cy="65" r="30" fill="url(#skin3)"/>
+  <!-- Hair (Long styled curls) -->
+  <path d="M 46 65 C 44 35, 70 24, 88 24 C 114 24, 118 45, 118 85 C 110 88, 106 65, 102 55 C 92 48, 70 48, 56 60 C 50 68, 48 85, 46 65 Z" fill="#18181B"/>
+  <circle cx="70" cy="64" r="3" fill="#1E293B"/>
+  <circle cx="90" cy="64" r="3" fill="#1E293B"/>
+  <!-- Smile -->
+  <path d="M 73 76 Q 80 83 87 76" fill="none" stroke="#9A3412" stroke-width="2" stroke-linecap="round"/>
+  <!-- Designer earring -->
+  <circle cx="48" cy="74" r="4" fill="#EC4899"/>
+</svg>

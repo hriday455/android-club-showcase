@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D1A"/>
+      <stop offset="100%" stop-color="#16203B"/>
+    </linearGradient>
+    <linearGradient id="bubbleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="bubbleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#bgGrad3)"/>
+
+  <!-- Code Editor Window Preview on left -->
+  <g transform="translate(40, 50)">
+    <rect width="250" height="280" rx="12" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    <!-- Window controls -->
+    <circle cx="20" cy="18" r="4.5" fill="#EF4444"/>
+    <circle cx="34" cy="18" r="4.5" fill="#F59E0B"/>
+    <circle cx="48" cy="18" r="4.5" fill="#10B981"/>
+    <text x="70" y="22" font-family="'Fira Code', monospace" font-size="10" fill="#8B949E">RoomChatDao.kt</text>
+
+    <!-- Code lines -->
+    <g font-family="'Fira Code', monospace" font-size="10" xml:space="preserve">
+      <text x="20" y="52" fill="#FF7B72">@Dao</text>
+      <text x="20" y="70" fill="#FFA657">interface <tspan fill="#79C0FF">ChatDao</tspan> {</text>
+      <text x="35" y="88" fill="#FF7B72">  @Query<tspan fill="#A5D6FF">("SELECT * FROM msgs")</tspan></text>
+      <text x="35" y="106" fill="#79C0FF">  fun <tspan fill="#D2A8FF">observeMessages</tspan>():</text>
+      <text x="50" y="124" fill="#FFA657">      Flow&lt;List&lt;Message&gt;&gt;</text>
+      <text x="35" y="148" fill="#FF7B72">  @Insert<tspan fill="#A5D6FF">(onConflict = REPLACE)</tspan></text>
+      <text x="35" y="166" fill="#79C0FF">  suspend fun <tspan fill="#D2A8FF">post</tspan>(msg: Msg)</text>
+      <text x="20" y="190" fill="#FFA657">}</text>
+
+      <rect x="20" y="210" width="210" height="48" rx="8" fill="rgba(61, 220, 132, 0.1)" stroke="rgba(61, 220, 132, 0.3)"/>
+      <text x="30" y="230" fill="#3DDC84" font-weight="bold">✓ Coroutine Flow Sync</text>
+      <text x="30" y="246" fill="#94A3B8" font-size="9">Latency &lt; 14ms via WebSockets</text>
+    </g>
+  </g>
+
+  <!-- Interactive Chat Bubbles on right -->
+  <g transform="translate(315, 60)">
+    <!-- Bubble 1 -->
+    <rect width="230" height="60" rx="12" fill="url(#bubbleGrad2)" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="25" cy="30" r="12" fill="#6366F1"/>
+    <text x="22" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFF">A</text>
+    <text x="48" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#38BDF8">Alex (Lead Android Dev)</text>
+    <text x="48" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#E2E8F0">Compose 1.7 baseline profiles are up!</text>
+
+    <!-- Bubble 2 (User reply) -->
+    <g transform="translate(30, 75)">
+      <rect width="215" height="60" rx="12" fill="url(#bubbleGrad1)"/>
+      <text x="15" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#BAE6FD">Priya (Core Member)</text>
+      <text x="15" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#FFFFFF">Reviewed the PR! App startup is 40% faster ⚡</text>
+    </g>
+
+    <!-- Bubble 3 -->
+    <g transform="translate(0, 150)">
+      <rect width="245" height="70" rx="12" fill="url(#bubbleGrad2)" stroke="rgba(61, 220, 132, 0.3)"/>
+      <circle cx="25" cy="35" r="12" fill="#10B981"/>
+      <text x="21" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFF">K</text>
+      <text x="48" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#34D399">Ktor Bot • Webhook</text>
+      <text x="48" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#E2E8F0">Release v2.4.0 deployed to Play Store</text>
+      <text x="48" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#3DDC84">All 34 Unit &amp; UI tests passed</text>
+    </g>
+  </g>
+</svg>

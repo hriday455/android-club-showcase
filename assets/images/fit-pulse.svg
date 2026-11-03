@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1B1038"/>
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="cyanGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F59B"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#bgGrad2)"/>
+  
+  <!-- Glowing circular telemetry rings -->
+  <g transform="translate(140, 190)">
+    <circle cx="0" cy="0" r="105" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="12"/>
+    <circle cx="0" cy="0" r="105" fill="none" stroke="url(#cyanGreen)" stroke-width="12" stroke-linecap="round" stroke-dasharray="450" stroke-dashoffset="110"/>
+    
+    <circle cx="0" cy="0" r="82" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="10"/>
+    <circle cx="0" cy="0" r="82" fill="none" stroke="url(#purplePink)" stroke-width="10" stroke-linecap="round" stroke-dasharray="360" stroke-dashoffset="140"/>
+
+    <text x="0" y="-8" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">9,420</text>
+    <text x="0" y="16" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#3DDC84">STEPS TAKEN</text>
+    <text x="0" y="34" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Goal: 10,000 steps</text>
+  </g>
+
+  <!-- Metric mini cards on the right -->
+  <g transform="translate(300, 60)">
+    <!-- Card 1: Heart Rate -->
+    <rect width="250" height="74" rx="12" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5"/>
+    <circle cx="36" cy="37" r="18" fill="rgba(236, 72, 153, 0.15)"/>
+    <path d="M 36 28 C 30 22 24 30 36 42 C 48 30 42 22 36 28 Z" fill="#EC4899"/>
+    <text x="68" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94A3B8">Active Heart Rate</text>
+    <text x="68" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">128 <tspan font-size="11" font-weight="400" fill="#94A3B8">BPM</tspan></text>
+    
+    <!-- Mini wave graph -->
+    <path d="M 160 40 Q 170 20 180 40 T 200 40 T 220 25 T 235 40" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Card 2: Calories -->
+    <g transform="translate(0, 90)">
+      <rect width="250" height="74" rx="12" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+      <circle cx="36" cy="37" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+      <circle cx="36" cy="37" r="7" fill="#38BDF8"/>
+      <text x="68" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94A3B8">Calories Burned</text>
+      <text x="68" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">642 <tspan font-size="11" font-weight="400" fill="#94A3B8">kcal</tspan></text>
+      <text x="175" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#3DDC84">+18%</text>
+    </g>
+
+    <!-- Card 3: Sleep Tracker -->
+    <g transform="translate(0, 180)">
+      <rect width="250" height="74" rx="12" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(61, 220, 132, 0.3)" stroke-width="1.5"/>
+      <circle cx="36" cy="37" r="18" fill="rgba(61, 220, 132, 0.15)"/>
+      <path d="M 31 30 A 8 8 0 1 0 41 40 A 10 10 0 1 1 31 30 Z" fill="#3DDC84"/>
+      <text x="68" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94A3B8">Deep Rest Cycle</text>
+      <text x="68" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#F8FAFC">7h 45m <tspan font-size="10" font-weight="500" fill="#3DDC84">Optimal</tspan></text>
+      <text x="180" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94A3B8">Jetpack Health</text>
+    </g>
+  </g>
+</svg>

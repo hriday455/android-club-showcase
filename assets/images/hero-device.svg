@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoneBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3DDC84"/>
+      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="phoneScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F1D"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="widgetGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#052E16"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="widgetGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <filter id="phoneShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#3DDC84" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Smartphone Outer Shell -->
+  <g filter="url(#phoneShadow)">
+    <rect x="20" y="20" width="300" height="500" rx="42" fill="#1E293B" stroke="url(#phoneBorder)" stroke-width="3"/>
+    <!-- Inner Screen Display -->
+    <rect x="26" y="26" width="288" height="488" rx="36" fill="url(#phoneScreen)"/>
+  </g>
+
+  <!-- Top Camera Punchhole -->
+  <circle cx="170" cy="46" r="6" fill="#030712" stroke="#1F2937" stroke-width="1.5"/>
+  <circle cx="170" cy="46" r="2" fill="#1E293B"/>
+
+  <!-- Status Bar -->
+  <text x="50" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">09:41</text>
+  <g transform="translate(245, 41)" fill="#F8FAFC">
+    <!-- Wifi icon -->
+    <path d="M 0 8 A 8 8 0 0 1 12 8 M 2 5 A 11 11 0 0 1 10 5 M 4 2 A 14 14 0 0 1 8 2" stroke="#F8FAFC" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <!-- Battery -->
+    <rect x="22" y="1" width="18" height="9" rx="2" fill="none" stroke="#F8FAFC" stroke-width="1.2"/>
+    <rect x="24" y="3" width="12" height="5" rx="1" fill="#3DDC84"/>
+    <line x1="41" y1="4" x2="41" y2="7" stroke="#F8FAFC" stroke-width="1.5"/>
+  </g>
+
+  <!-- Phone UI Body -->
+  <!-- Top Club Header Banner inside phone -->
+  <g transform="translate(42, 70)">
+    <rect width="256" height="65" rx="16" fill="rgba(61, 220, 132, 0.12)" stroke="rgba(61, 220, 132, 0.3)" stroke-width="1"/>
+    <!-- Bugdroid mini icon -->
+    <path d="M 22 28 A 12 12 0 0 1 42 28 Z" fill="#3DDC84"/>
+    <circle cx="28" cy="24" r="1.5" fill="#0A0F1D"/>
+    <circle cx="36" cy="24" r="1.5" fill="#0A0F1D"/>
+    <line x1="26" y1="18" x2="23" y2="14" stroke="#3DDC84" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="38" y1="18" x2="41" y2="14" stroke="#3DDC84" stroke-width="1.8" stroke-linecap="round"/>
+
+    <text x="52" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#F8FAFC">Android Club Live</text>
+    <text x="52" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#3DDC84">● Build Sprint Active (Week 4)</text>
+  </g>
+
+  <!-- Interactive App Widget 1: Daily Kotlin Challenge -->
+  <g transform="translate(42, 146)">
+    <rect width="256" height="100" rx="18" fill="url(#widgetGrad1)" stroke="rgba(74, 222, 128, 0.3)" stroke-width="1"/>
+    <text x="16" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#4ADE80">DAILY KOTLIN CHALLENGE</text>
+    <text x="16" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Mastering Flows &amp; Channels</text>
+    <text x="16" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#A7F3D0">Solve today's reactive state challenge &amp; earn club XP</text>
+
+    <!-- Progress bar -->
+    <rect x="16" y="78" width="160" height="6" rx="3" fill="rgba(0,0,0,0.3)"/>
+    <rect x="16" y="78" width="120" height="6" rx="3" fill="#3DDC84"/>
+    <text x="185" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#3DDC84">75% Solved</text>
+  </g>
+
+  <!-- Interactive App Widget 2: Upcoming Club Event -->
+  <g transform="translate(42, 256)">
+    <rect width="256" height="88" rx="18" fill="url(#widgetGrad2)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1"/>
+    <text x="16" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#A5B4FC">NEXT EVENT IN 2 DAYS</text>
+    <text x="16" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Compose Canvas Animations</text>
+    <text x="16" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#C7D2FE">📍 Tech Lab 3 &amp; YouTube Live</text>
+    
+    <rect x="175" y="46" width="65" height="26" rx="13" fill="#4F46E5"/>
+    <text x="207" y="63" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#FFF">RSVP'd ✓</text>
+  </g>
+
+  <!-- Quick App Icon Grid (Material You style) -->
+  <g transform="translate(42, 355)">
+    <!-- Icon 1: Jetpack -->
+    <rect x="6" y="6" width="46" height="46" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="29" cy="29" r="10" fill="#3DDC84"/>
+    <text x="29" y="66" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Compose</text>
+
+    <!-- Icon 2: Firebase -->
+    <rect x="71" y="6" width="46" height="46" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="94" cy="29" r="10" fill="#F59E0B"/>
+    <text x="94" y="66" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Cloud</text>
+
+    <!-- Icon 3: Git repo -->
+    <rect x="136" y="6" width="46" height="46" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="159" cy="29" r="10" fill="#8B5CF6"/>
+    <text x="159" y="66" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Projects</text>
+
+    <!-- Icon 4: Android Studio -->
+    <rect x="201" y="6" width="46" height="46" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="224" cy="29" r="10" fill="#06B6D4"/>
+    <text x="224" y="66" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">IDE Lab</text>
+  </g>
+
+  <!-- Bottom Navigation Bar & Gesture Bar -->
+  <g transform="translate(26, 440)">
+    <rect width="288" height="50" rx="12" fill="rgba(15, 23, 42, 0.95)"/>
+    <circle cx="70" cy="20" r="14" fill="rgba(61, 220, 132, 0.2)"/>
+    <circle cx="70" cy="20" r="5" fill="#3DDC84"/>
+    <circle cx="144" cy="20" r="5" fill="#64748B"/>
+    <circle cx="218" cy="20" r="5" fill="#64748B"/>
+
+    <!-- Android Home Pill Bar -->
+    <rect x="100" y="42" width="88" height="4" rx="2" fill="#E2E8F0"/>
+  </g>
+</svg>

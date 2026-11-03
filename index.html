@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Club — Official Student Chapter</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. NAVIGATION BAR
+       ======================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="assets/icons/android-logo.svg" alt="Android Robot Logo">
+        <span>Android Club</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#tracks">Tracks</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#join">Recruitment</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       2. HERO / WELCOME SECTION
+       ======================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="badge-pill">● Recruitments Active for 2026-27</span>
+          <p class="hero-tagline">Building The Next Generation Of Mobile Innovators</p>
+          <h1 class="hero-title">
+            Crafting Apps That <span class="text-gradient">Inspire Millions</span> On Android.
+          </h1>
+          <p class="hero-desc">
+            We are a vibrant community of student developers, designers, and tech enthusiasts. From Jetpack Compose to cross-platform mobile and hackathons, we learn, build, and ship together.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore Projects →</a>
+            <a href="#join" class="btn btn-secondary">Join The Club</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/images/hero-device.svg" alt="Android Club Phone App Preview" class="hero-phone-img">
+        </div>
+      </div>
+
+      <!-- Quick Numbers Bar -->
+      <div class="stats-bar card">
+        <div class="stat-item">
+          <div class="stat-num">1,500+</div>
+          <div class="stat-label">Community Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">45+</div>
+          <div class="stat-label">Shipped Apps</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Workshops &amp; Talks</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100k+</div>
+          <div class="stat-label">Play Store Downloads</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       3. ABOUT US SECTION
+       ======================================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Who We Are</span>
+        <h2 class="section-title">What Our Club Does</h2>
+        <p class="section-desc">
+          Android Club empowers students with hands-on skills in modern mobile technologies, open-source development, and product design.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card card">
+          <div class="about-icon">🚀</div>
+          <h3>Practical Workshops</h3>
+          <p>Learn Kotlin syntax, Jetpack Compose layouts, and app architecture with guided code-along sessions.</p>
+        </div>
+
+        <div class="about-card card">
+          <div class="about-icon">📱</div>
+          <h3>Production Apps</h3>
+          <p>Build real-world apps deployed to Google Play that solve everyday campus and community challenges.</p>
+        </div>
+
+        <div class="about-card card">
+          <div class="about-icon">🏆</div>
+          <h3>Hackathons &amp; Sprints</h3>
+          <p>Collaborate in teams, build prototypes in 24 hours, and compete for national-level awards.</p>
+        </div>
+
+        <div class="about-card card">
+          <div class="about-icon">🤝</div>
+          <h3>Peer Mentorship</h3>
+          <p>Get code reviews, resume feedback, and internship guidance from experienced seniors and alumni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. TRACKS & SPECIALIZATIONS
+       ======================================================== -->
+  <section id="tracks" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Technical Domains</span>
+        <h2 class="section-title">Our Learning Tracks</h2>
+        <p class="section-desc">Choose a track that aligns with your passions and goals.</p>
+      </div>
+
+      <div class="tracks-grid">
+        <div class="track-card card">
+          <span class="track-num">TRACK 01</span>
+          <h3>Native Android</h3>
+          <p>Master modern Kotlin, Jetpack Compose, Coroutines, StateFlow, and Room SQLite database.</p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Compose</span>
+            <span class="tag">Flow</span>
+            <span class="tag">Room</span>
+          </div>
+        </div>
+
+        <div class="track-card card">
+          <span class="track-num">TRACK 02</span>
+          <h3>Cross-Platform</h3>
+          <p>Build multi-platform apps using Flutter &amp; Dart for smooth 60fps experiences across devices.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">API</span>
+          </div>
+        </div>
+
+        <div class="track-card card">
+          <span class="track-num">TRACK 03</span>
+          <h3>UI/UX &amp; Material 3</h3>
+          <p>Design intuitive mobile screens with Figma, Google Material You principles, and micro-interactions.</p>
+          <div class="tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Material 3</span>
+            <span class="tag">Prototypes</span>
+          </div>
+        </div>
+
+        <div class="track-card card">
+          <span class="track-num">TRACK 04</span>
+          <h3>Backend &amp; Cloud</h3>
+          <p>Connect mobile apps to real-time servers, WebSockets, and cloud infrastructure using Kotlin Ktor.</p>
+          <div class="tags">
+            <span class="tag">Ktor</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. PROJECTS SHOWCASE SECTION
+       ======================================================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Student Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Explore applications designed and built by our club members.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-category="all">All Projects</button>
+        <button class="filter-btn" data-category="compose">Jetpack Compose</button>
+        <button class="filter-btn" data-category="flutter">Flutter</button>
+        <button class="filter-btn" data-category="hackathon">Hackathons</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card card" data-category="compose">
+          <div class="project-img-box">
+            <img src="assets/images/campus-nav.svg" alt="CampusNav 3D App Preview">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CampusNav 3D</h3>
+            <p class="project-tagline">Indoor Navigation &amp; AR Wayfinding</p>
+            <p class="project-desc">
+              An open-source campus map built with Jetpack Compose and ARCore. Helps freshmen navigate multi-floor buildings with offline routing.
+            </p>
+            <div class="tags" style="margin-bottom: 16px;">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Compose</span>
+              <span class="tag">ARCore</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card card" data-category="compose">
+          <div class="project-img-box">
+            <img src="assets/images/fit-pulse.svg" alt="FitPulse App Preview">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FitPulse Android</h3>
+            <p class="project-tagline">Real-time Biometrics &amp; Health</p>
+            <p class="project-desc">
+              Workout tracker integrated with Android's Health Connect API. Features custom Compose canvas graphs for heart rate and daily activity.
+            </p>
+            <div class="tags" style="margin-bottom: 16px;">
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Health API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card card" data-category="compose">
+          <div class="project-img-box">
+            <img src="assets/images/dev-connect.svg" alt="DevConnect App Preview">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">DevConnect Mobile</h3>
+            <p class="project-tagline">Real-time Code Sharing &amp; Chat</p>
+            <p class="project-desc">
+              A community hub for student developers with syntax-highlighted code snippets and instant chat powered by Kotlin Ktor WebSockets.
+            </p>
+            <div class="tags" style="margin-bottom: 16px;">
+              <span class="tag">Kotlin</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Hilt</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card card" data-category="hackathon">
+          <div class="project-img-box">
+            <img src="assets/images/agro-sense.svg" alt="AgroSense App Preview">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AgroSense Mobile</h3>
+            <p class="project-tagline">Smart Agriculture Telemetry</p>
+            <p class="project-desc">
+              Smart India Hackathon Winner. Connects to field IoT soil sensors over Bluetooth LE (BLE), providing automated valve schedules and voice tips.
+            </p>
+            <div class="tags" style="margin-bottom: 16px;">
+              <span class="tag">Bluetooth LE</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Hackathon</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">GitHub Repo →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       6. EVENTS & WORKSHOPS
+       ======================================================== -->
+  <section id="events" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Get Involved</span>
+        <h2 class="section-title">Events &amp; Workshops</h2>
+        <p class="section-desc">Join our interactive sessions to sharpen your mobile app skills.</p>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card card">
+          <img src="assets/images/compose-camp.svg" alt="Compose Camp Workshop">
+          <div class="event-info">
+            <div class="event-date">📅 Nov 22, 2026 • 10:00 AM</div>
+            <h3 class="event-title">Android Compose Camp 2026</h3>
+            <p class="event-desc">
+              Hands-on 1-day bootcamp covering declarative UI, animations, and state management in Jetpack Compose.
+            </p>
+            <a href="#join" class="btn btn-primary" style="align-self: flex-start;">Register Now</a>
+          </div>
+        </div>
+
+        <div class="event-card card">
+          <img src="assets/images/appathon.svg" alt="Android Appathon">
+          <div class="event-info">
+            <div class="event-date">📅 Dec 14 - 15, 2026 • 24 Hours</div>
+            <h3 class="event-title">Annual Android Appathon</h3>
+            <p class="event-desc">
+              Our 24-hour hackathon where student teams design, develop, and pitch mobile apps to win cash prizes and internships.
+            </p>
+            <a href="#join" class="btn btn-primary" style="align-self: flex-start;">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       7. TEAM SECTION
+       ======================================================== -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Leadership</span>
+        <h2 class="section-title">Meet Our Leads</h2>
+        <p class="section-desc">The student organizers behind Android Club's workshops and events.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card card">
+          <img src="assets/images/avatar-1.svg" alt="Aarav Sharma" class="team-avatar">
+          <h3 class="team-name">Aarav Sharma</h3>
+          <p class="team-role">Club President</p>
+          <p class="team-bio">Passionate about Kotlin Multiplatform and building helpful student communities.</p>
+        </div>
+
+        <div class="team-card card">
+          <img src="assets/images/avatar-2.svg" alt="Karan Mehta" class="team-avatar">
+          <h3 class="team-name">Karan Mehta</h3>
+          <p class="team-role">Technical Head</p>
+          <p class="team-bio">Specializes in Jetpack Compose, Ktor backend APIs, and app architecture.</p>
+        </div>
+
+        <div class="team-card card">
+          <img src="assets/images/avatar-3.svg" alt="Ananya Iyer" class="team-avatar">
+          <h3 class="team-name">Ananya Iyer</h3>
+          <p class="team-role">UI/UX Design Lead</p>
+          <p class="team-bio">Focuses on Material 3 design systems, Figma prototyping, and clean mobile UI.</p>
+        </div>
+
+        <div class="team-card card">
+          <img src="assets/images/avatar-4.svg" alt="Vikram Singhania" class="team-avatar">
+          <h3 class="team-name">Vikram Singhania</h3>
+          <p class="team-role">Operations &amp; Events</p>
+          <p class="team-bio">Orchestrating hackathons, speaker sessions, and community partnerships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       8. RECRUITMENT APPLICATION FORM
+       ======================================================== -->
+  <section id="join" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Join Android Club</span>
+        <h2 class="section-title">Apply for 2026-27</h2>
+        <p class="section-desc">
+          Beginners and experienced developers are both welcome. Fill out this quick form to get started.
+        </p>
+      </div>
+
+      <div class="form-wrapper card">
+        <form id="join-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" required class="form-control" placeholder="e.g. Priyanshu Sharma">
+          </div>
+
+          <div class="form-group">
+            <label for="email">College Email Address *</label>
+            <input type="email" id="email" required class="form-control" placeholder="e.g. priyanshu@university.edu">
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year of Study *</label>
+            <select id="year" required class="form-control">
+              <option value="">Select your year</option>
+              <option value="1st Year">1st Year (Freshman)</option>
+              <option value="2nd Year">2nd Year (Sophomore)</option>
+              <option value="3rd Year">3rd Year (Junior)</option>
+              <option value="4th Year">4th Year (Senior)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="domain">Domain of Interest *</label>
+            <select id="domain" required class="form-control">
+              <option value="">Choose your primary interest</option>
+              <option value="Native Android (Kotlin)">Native Android (Kotlin &amp; Compose)</option>
+              <option value="Cross-Platform (Flutter)">Cross-Platform (Flutter &amp; Dart)</option>
+              <option value="UI/UX Design (Figma)">UI/UX Design (Figma &amp; Material 3)</option>
+              <option value="Cloud &amp; Backend">Mobile Backend &amp; Cloud</option>
+              <option value="Event Management">Events &amp; Social Media</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Why do you want to join? (Optional)</label>
+            <textarea id="message" rows="3" class="form-control" placeholder="What are you excited to build or learn with us?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Submit Application</button>
+        </form>
+
+        <!-- Success Message box -->
+        <div id="form-message" class="form-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       9. FREQUENTLY ASKED QUESTIONS (FAQ)
+       ======================================================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-pill">Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Got doubts? Find quick answers right here.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item card">
+          <button class="faq-question">
+            <span>Do I need prior coding experience to join?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            No, we organize beginner-friendly tracks where we teach Kotlin basics, Git/GitHub, and app fundamentals from square one.
+          </div>
+        </div>
+
+        <div class="faq-item card">
+          <button class="faq-question">
+            <span>What laptop specs do I need for Android Studio?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            8 GB RAM and an Intel i5 / AMD Ryzen 5 or equivalent works fine. You can also connect your personal Android phone via USB to test apps without running a heavy emulator.
+          </div>
+        </div>
+
+        <div class="faq-item card">
+          <button class="faq-question">
+            <span>What is the recruitment selection process?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Fill out the form above, complete a simple beginner task in your chosen track, and attend a friendly chat with our leads.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       10. FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Android Club. All rights reserved.</p>
+      <p>Crafted with 💚 using clean HTML, modern CSS &amp; lightweight JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Simple JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

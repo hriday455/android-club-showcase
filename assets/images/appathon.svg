@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="appathonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1035"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </linearGradient>
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="320" rx="16" fill="url(#appathonGrad)"/>
+
+  <!-- Background decorative circuits -->
+  <path d="M 50 280 L 120 210 L 250 210 L 300 260" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="2"/>
+  <circle cx="300" cy="260" r="4" fill="#F59E0B"/>
+
+  <g transform="translate(40, 40)">
+    <rect width="130" height="28" rx="14" fill="rgba(245, 158, 11, 0.15)" stroke="rgba(245, 158, 11, 0.4)"/>
+    <text x="65" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#F59E0B">24-HR HACKATHON</text>
+
+    <text x="0" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">Android Appathon 2026</text>
+    <text x="0" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#94A3B8">Build, Innovate &amp; Pitch in 24 Hours</text>
+
+    <!-- Hackathon perks -->
+    <g transform="translate(0, 140)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#E2E8F0">
+      <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+      <text x="24" y="12">₹50,000+ Prize Pool &amp; Direct Internship Interviews</text>
+
+      <circle cx="8" cy="38" r="4" fill="#3DDC84"/>
+      <text x="24" y="42">Tracks: FinTech, HealthTech, AI on Edge &amp; Campus Life</text>
+
+      <circle cx="8" cy="68" r="4" fill="#38BDF8"/>
+      <text x="24" y="72">Free Food, Energy Drinks &amp; Mentor Office Hours</text>
+    </g>
+  </g>
+
+  <!-- Trophy Illustration -->
+  <g transform="translate(420, 60)">
+    <circle cx="60" cy="80" r="55" fill="rgba(245, 158, 11, 0.1)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="2"/>
+    <path d="M 40 50 L 80 50 L 75 80 C 75 90 68 100 60 100 C 52 100 45 90 45 80 Z" fill="url(#neonOrange)"/>
+    <path d="M 35 55 C 28 55 25 65 30 75 C 34 82 42 80 42 80" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 85 55 C 92 55 95 65 90 75 C 86 82 78 80 78 80" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <rect x="52" y="100" width="16" height="18" fill="#D97706"/>
+    <rect x="42" y="118" width="36" height="10" rx="3" fill="#B45309"/>
+    <text x="60" y="150" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FCD34D">₹50,000 PRIZES</text>
+  </g>
+</svg>
