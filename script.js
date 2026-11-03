@@ -1,8 +1,3 @@
-// ==========================================
-// Android Club Showcase - Simple JavaScript
-// Light, clean, and easy-to-understand code
-// ==========================================
-
 // 1. Mobile Navigation Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');

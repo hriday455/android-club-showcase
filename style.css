@@ -1,9 +1,3 @@
-/* ========================================================
-   Android Club Showcase - Main Stylesheet
-   Clean, modern, responsive CSS with Android dark tech theme
-   ======================================================== */
-
-/* CSS Variables for Colors and Fonts */
 :root {
   --bg-color: #070B14;
   --bg-card: rgba(14, 20, 36, 0.75);
